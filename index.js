@@ -23,19 +23,19 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1199050360782864425')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
-    .setDetails(`Valorant [${formatTime()}]`)
+    .setURL('https://www.twitch.tv/qwoqowq') //Must be a youtube video link 
+    .setState(' ')
+    .setName(' ')
+    .setDetails(`  [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/1197246292955516930/1199044144849506388/HD_transparent_picture.png?ex=65ca5661&is=65b7e161&hm=bb8d2fb8bdeb40dca8207175664a88e84e4937343a303319525370dc17074847&=&format=webp&quality=lossless&width=1177&height=662') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText(' ') //Text when you hover the Large image
+    .setAssetsSmallImage('https://media.discordapp.net/attachments/1197246292955516930/1199044144849506388/HD_transparent_picture.png?ex=65ca5661&is=65b7e161&hm=bb8d2fb8bdeb40dca8207175664a88e84e4937343a303319525370dc17074847&=&format=webp&quality=lossless&width=1177&height=662') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText(' ') //Text when you hover the Small image
+    .addButton(' ', 'https://discord.com/terms')
+    .addButton(' ', 'https://discord.com/terms');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
